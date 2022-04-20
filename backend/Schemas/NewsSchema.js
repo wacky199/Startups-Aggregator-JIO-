@@ -6,6 +6,7 @@ const newsSchema = new mongoose.Schema({
   body: 'string',
   imageLink: 'string',
   startupName: 'string',
+  tag:'string'
 });
 
 const NewsModel = mongoose.model('NewsModel', newsSchema);

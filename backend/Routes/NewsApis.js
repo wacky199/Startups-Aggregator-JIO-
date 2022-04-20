@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { NewsModel } = require("../Schemas/NewsSchema");
 
-// to get/fetch the news from the database
+// fetch all the news from the database
 router.get("/", async (req, res) => {
   const doc = await NewsModel.find();
   const error = {
@@ -10,6 +10,23 @@ router.get("/", async (req, res) => {
   };
   res.json(doc ? doc : error);
 });
+
+// fetch according to given parameter
+
+router.get("/:tag", async (req, res) => {
+  const tag = req.params.tag;
+  console.log(tag);
+  const query = await NewsModel.find({ tag: tag }).limit(10);
+  if (query.length > 0) {
+    res.json(query);
+    res.status(200);
+  } else {
+    res.json({ Error: "No specified tag found!" });
+    res.status(404);
+  }
+});
+
+// temp object to check the apis
 
 const tempData = {
   timestamp: +new Date(),
@@ -20,7 +37,6 @@ const tempData = {
   startupName: "Fantasy",
 };
 
-
 // set/add news to the database
 router.post("/post", async (req, res) => {
   const data = req.body;
@@ -28,7 +44,7 @@ router.post("/post", async (req, res) => {
   const news = new NewsModel(data);
   try {
     news.save();
-    console.log("saved successfully", news)
+    console.log("saved successfully", news);
     res.send("success");
   } catch (err) {
     console.log("Error!!", err);
