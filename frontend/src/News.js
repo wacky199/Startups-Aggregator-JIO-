@@ -72,7 +72,7 @@ const News = () => {
                                 <Card>
                                     <CardImg style={{ display: "flex", flexWrap: "wrap" }} src={item.ImageLink} alt={item.HeadLine} />
                                     <CardBody>
-                                        <CardTitle> <a href='/news_des'><h3>{item.Headline}</h3></a></CardTitle>
+                                        <CardTitle> <a href='news_des'><h3>{item.Headline}</h3></a></CardTitle>
                                         {/* <CardText>{item.Body}</CardText> */}
                                         <div className="row">
                                             <div className="col-6">
