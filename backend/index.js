@@ -5,6 +5,9 @@ const app = express();
 const port = 3000;
 
 const News = require("./Routes/NewsApis");
+const Startups = require("./Routes/StartupApis");
+const Innovations = require("./Routes/InnovationApis");
+
 dbConnection();
 
 app.use(express.json());
@@ -19,9 +22,10 @@ app.use((req, res, next) => {
 });
 
 
-// added the news apis
+// added apis
 app.use("/api/news",News);
-
+app.use("/api/startup", Startups);
+app.use("/api/innovation", Innovations);
 
 // to check if server is working
 app.get("/", (req, res) => {

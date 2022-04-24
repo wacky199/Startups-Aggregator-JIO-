@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-const innovationZoneSchema = new mongoose.Schema({
+const innovationSchema = new mongoose.Schema({
     timestamp: "string",
     source: "string",
     headline: "string",
@@ -7,4 +7,4 @@ const innovationZoneSchema = new mongoose.Schema({
     imageLink: "string",
     startupName: "string"
 })
-module.exports = mongoose.model("InnovationZoneModel", innovationZoneSchema)
+module.exports = mongoose.model("InnovationModel", innovationSchema)

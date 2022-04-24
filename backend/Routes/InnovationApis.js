@@ -1,14 +1,18 @@
 const express = require("express");
 const router = express.Router();
-const { NewsModel } = require("../Schemas/NewsSchema");
+// const { InnovationModel } = require("../Schemas/InnovationSchema");
+const { StartupModel } = require("../Schemas/StartupSchema");
 
-const LIMIT = 10; 
-// fetch all the news from the database
+
+
+const LIMIT = 10;
+// fetch all the innovation from the database
 router.get("/", async (req, res) => {
-  const doc = await NewsModel.find().limit(LIMIT);
+  const doc = await StartupModel.find();
   const error = {
     error: "There isn't any doc!!!",
   };
+  doc.slice(-LIMIT,)
   res.json(doc ? doc : error);
 });
 
@@ -17,7 +21,7 @@ router.get("/", async (req, res) => {
 // router.get("/:tag", async (req, res) => {
 //   const tag = req.params.tag;
 //   console.log(tag);
-//   const query = await NewsModel.find({ tag: tag }).limit(LIMIT);
+//   const query = await InnovationModel.find({ tag: tag }).limit(LIMIT);
 //   if (query.length > 0) {
 //     res.json(query);
 //     res.status(200);
@@ -35,17 +39,17 @@ router.get("/", async (req, res) => {
 //   headline: "NO STIPEND, NO HEADLINE",
 //   body: "what can I write here!",
 //   imageLink: "dont know yet",
-//   startupName: "Fantasy",
+//   innovationName: "Fantasy",
 // };
 
-// set/add news to the database
+// // set/add innovation to the database
 // router.post("/post", async (req, res) => {
 //   const data = req.body;
 //   console.log(data);
-//   const news = new NewsModel(data);
+//   const innovation = new InnovationModel(data);
 //   try {
-//     news.save();
-//     console.log("saved successfully", news);
+//     innovation.save();
+//     console.log("saved successfully", innovation);
 //     res.send("success");
 //   } catch (err) {
 //     console.log("Error!!", err);

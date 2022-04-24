@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const { NewsModel } = require("../Schemas/NewsSchema");
+const { StartupModel } = require("../Schemas/StartupSchema");
 
-const LIMIT = 10; 
-// fetch all the news from the database
+const LIMIT = 10;
+// fetch all the startup from the database
 router.get("/", async (req, res) => {
-  const doc = await NewsModel.find().limit(LIMIT);
+  const doc = await StartupModel.find().limit(LIMIT);
   const error = {
     error: "There isn't any doc!!!",
   };
@@ -17,7 +17,7 @@ router.get("/", async (req, res) => {
 // router.get("/:tag", async (req, res) => {
 //   const tag = req.params.tag;
 //   console.log(tag);
-//   const query = await NewsModel.find({ tag: tag }).limit(LIMIT);
+//   const query = await StartupModel.find({ tag: tag }).limit(LIMIT);
 //   if (query.length > 0) {
 //     res.json(query);
 //     res.status(200);
@@ -28,7 +28,6 @@ router.get("/", async (req, res) => {
 // });
 
 // temp object to check the apis
-
 // const tempData = {
 //   timestamp: +new Date(),
 //   source: "VS code",
@@ -38,14 +37,14 @@ router.get("/", async (req, res) => {
 //   startupName: "Fantasy",
 // };
 
-// set/add news to the database
+// set/add startup to the database
 // router.post("/post", async (req, res) => {
 //   const data = req.body;
 //   console.log(data);
-//   const news = new NewsModel(data);
+//   const startup = new StartupModel(data);
 //   try {
-//     news.save();
-//     console.log("saved successfully", news);
+//     startup.save();
+//     console.log("saved successfully", startup);
 //     res.send("success");
 //   } catch (err) {
 //     console.log("Error!!", err);
