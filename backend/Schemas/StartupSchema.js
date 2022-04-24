@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 const startupSchema = new mongoose.Schema({
   img: "string",
   link: "string",
@@ -11,7 +11,7 @@ const startupSchema = new mongoose.Schema({
   founding_date: "string",
   no_of_emp: "string",
   core_team: "string",
-	funding_round:"array",
+  funding_round: "array",
 });
 const StartupModel = mongoose.model("StartupModel", startupSchema);
-module.exports = {StartupModel};
+module.exports = { StartupModel };

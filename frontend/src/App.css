@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.paginationBttns{
+  margin: auto;
+  width : 60%;
+  padding: 10px;
+  height : 40px;
+  list-style: none;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.paginationBttns a{
+  padding: 3px;
+  margin : 3px;
+  border-radius : 5px;
+  border : 1px lightblue;
+  color: bold black;
+  cursor : pointer;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.paginationBttns a:hover{
+  color : white;
+  background-color: lightblue;
+}
+.paginationActive a{
+  color : white;
+  background-color: lightblue;
+}
+.prevBttn{
+  font-weight: bold;
+  color : black;
+  background-color: lightblue;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.heading{
+  text-align: center;
+  font-style: oblique;
+  font-weight: bold;
+}
+.startup-card {
+  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+  margin: 10px;
+  max-width : 450px;
+  word-wrap: break-word;
+}
+.card-h5{
+  text-align:left;
+  margin:2px;
+  font-style: italic;
+  font-weight: bold;
+
+}
+.card-msg{
+  font-family: monospace;
+  font-weight: 100;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.startup-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.startupnews{
+  display: flex;
+  width: auto;
+  justify-content: center;/*space-around*/
+  align-items: center;
+  overflow: auto;
+  flex-wrap: wrap;
+ 
 }

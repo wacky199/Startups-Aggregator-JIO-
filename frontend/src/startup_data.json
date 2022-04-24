@@ -1,0 +1,193 @@
+[{
+  "Name": "Start up Name 1",
+  "Industry": "Industry 1",
+  "FounderInfo": [{
+    "info1" : "lorem ipsum",
+    "info2": "lorem ipsum"
+  }],
+  "ProductDetails": [{
+    "product1": "lorem ipsum",
+    "product2": "lorem ipsum"
+  }],
+  "FoundingHistory": [{
+    "history1": "lorem ipsum",
+    "history2": "lorem ipsum"
+  }]
+},
+{
+  "Name": "Start up Name 2",
+  "Industry": "Industry 2",
+  "FounderInfo": [{
+    "info1": "lorem ipsum",
+    "info2": "lorem ipsum"
+  }],
+  "ProductDetails": [{
+    "product1": "lorem ipsum",
+    "product2": "lorem ipsum"
+  }],
+  "FoundingHistory": [{
+    "history1": "lorem ipsum",
+    "history2": "lorem ipsum"
+  }]
+},
+{
+  "Name": "Start up Name 3",
+  "Industry": "Industry 3",
+  "FounderInfo": [{
+    "info1": "lorem ipsum",
+    "info2": "lorem ipsum"
+  }],
+  "ProductDetails": [{
+    "product1": "lorem ipsum",
+    "product2": "lorem ipsum"
+  }],
+  "FoundingHistory": [{
+    "history1": "lorem ipsum",
+    "history2": "lorem ipsum"
+  }]
+},
+{
+  "Name": "Start up Name 4",
+  "Industry": "Industry 4",
+  "FounderInfo": [{
+    "info1": "lorem ipsum",
+    "info2": "lorem ipsum"
+  }],
+  "ProductDetails": [{
+    "product1": "lorem ipsum",
+    "product2": "lorem ipsum"
+  }],
+  "FoundingHistory": [{
+    "history1": "lorem ipsum",
+    "history2": "lorem ipsum"
+  }]
+},
+{
+  "Name": "Start up Name 5",
+  "Industry": "Industry 5",
+  "FounderInfo": [{
+    "info1": "lorem ipsum",
+    "info2": "lorem ipsum"
+  }],
+  "ProductDetails": [{
+    "product1": "lorem ipsum",
+    "product2": "lorem ipsum"
+  }],
+  "FoundingHistory": [{
+    "history1": "lorem ipsum",
+    "history2": "lorem ipsum"
+  }]
+},
+{
+  "Name": "Start up Name 6",
+  "Industry": "Industry 6",
+  "FounderInfo": [{
+    "info1": "lorem ipsum",
+    "info2": "lorem ipsum"
+  }],
+  "ProductDetails": [{
+    "product1": "lorem ipsum",
+    "product2": "lorem ipsum"
+  }],
+  "FoundingHistory": [{
+    "history1": "lorem ipsum",
+    "history2": "lorem ipsum"
+  }]
+},
+{
+  "Name": "Start up Name 7",
+  "Industry": "Industry 7",
+  "FounderInfo": [{
+    "info1": "lorem ipsum",
+    "info2": "lorem ipsum"
+  }],
+  "ProductDetails": [{
+    "product1": "lorem ipsum",
+    "product2": "lorem ipsum"
+  }],
+  "FoundingHistory": [{
+    "history1": "lorem ipsum",
+    "history2": "lorem ipsum"
+  }]
+},
+{
+  "Name": "Start up Name 8",
+  "Industry": "Industry 8",
+  "FounderInfo": [{
+    "info1": "lorem ipsum",
+    "info2": "lorem ipsum"
+  }],
+  "ProductDetails": [{
+    "product1": "lorem ipsum",
+    "product2": "lorem ipsum"
+  }],
+  "FoundingHistory": [{
+    "history1": "lorem ipsum",
+    "history2": "lorem ipsum"
+  }]
+},
+{
+  "Name": "Start up Name 9",
+  "Industry": "Industry 9",
+  "FounderInfo": [{
+    "info1": "lorem ipsum",
+    "info2": "lorem ipsum"
+  }],
+  "ProductDetails": [{
+    "product1": "lorem ipsum",
+    "product2": "lorem ipsum"
+  }],
+  "FoundingHistory": [{
+    "history1": "lorem ipsum",
+    "history2": "lorem ipsum"
+  }]
+},
+{
+  "Name": "Start up Name 10",
+  "Industry": "Industry 10",
+  "FounderInfo": [{
+    "info1": "lorem ipsum",
+    "info2": "lorem ipsum"
+  }],
+  "ProductDetails": [{
+    "product1": "lorem ipsum",
+    "product2": "lorem ipsum"
+  }],
+  "FoundingHistory": [{
+    "history1": "lorem ipsum",
+    "history2": "lorem ipsum"
+  }]
+},
+{
+  "Name": "Start up Name 11",
+  "Industry": "Industry 11",
+  "FounderInfo": [{
+    "info1": "lorem ipsum",
+    "info2": "lorem ipsum"
+  }],
+  "ProductDetails": [{
+    "product1": "lorem ipsum",
+    "product2": "lorem ipsum"
+  }],
+  "FoundingHistory": [{
+    "history1": "lorem ipsum",
+    "history2": "lorem ipsum"
+  }]
+},
+{
+  "Name": "Start up Name 12",
+  "Industry": "Industry 12",
+  "FounderInfo": [{
+    "info1": "lorem ipsum",
+    "info2": "lorem ipsum"
+  }],
+  "ProductDetails": [{
+    "product1": "lorem ipsum",
+    "product2": "lorem ipsum"
+  }],
+  "FoundingHistory": [{
+    "history1": "lorem ipsum",
+    "history2": "lorem ipsum"
+  }]
+}
+]
